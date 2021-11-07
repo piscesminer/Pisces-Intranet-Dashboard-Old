@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+
+    <title>Pices-Web-Controller</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <meta name="description" content="FlexyCodes - FlexyCard vCard Template. Creating my personal page!" />
+
+    <!-- CSS | bootstrap -->
+    <!-- Credits: http://getbootstrap.com/ -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+    <!-- CSS | font-awesome -->
+    <!-- Credits: http://fortawesome.github.io/Font-Awesome/icons/ -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+
+    <!-- CSS | animate -->
+    <!-- Credits: http://daneden.github.io/animate.css/ -->
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+
+    <!-- CSS | Normalize -->
+    <!-- Credits: http://manos.malihu.gr/jquery-custom-content-scroller -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
+
+    <!-- CSS | Colors -->
+    <link rel="stylesheet" type="text/css" href="css/colors/DarkBlue.css" id="colors-style" />
+    <link rel="stylesheet" type="text/css" href="css/switcher.css" />
+
+    <!-- CSS | Style -->
+    <!-- Credits: http://themeforest.net/user/FlexyCodes -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <!-- CSS | prettyPhoto -->
+    <!-- Credits: http://www.no-margin-for-errors.com/ -->
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
+
+    <!-- CSS | Google Fonts -->
+    <link href='http://fonts.useso.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico">
+
+    <!--[if IE 7]>
+                <link rel="stylesheet" type="text/css" href="css/icons/font-awesome-ie7.min.css"/>
+        <![endif]-->
+
+    <style>
+        @media only screen and (max-width : 991px) {
+            .resp-vtabs .resp-tabs-container {
+                margin-left: 13px;
+            }
+        }
+
+        @media only screen and (min-width : 800px) and (max-width : 991px) {
+            .resp-vtabs .resp-tabs-container {
+                margin-left: 13px;
+                width: 89%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--[if lt IE 7]>
+                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- Laoding page -->
+    <div id="preloader">
+        <div id="spinner"></div>
+    </div>
+
+    <!-- .slideshow -->
+    <ul class="cb-slideshow" id="cb_slideshow" style="display:none">
+        <li><span>Image 01</span>
+            <div></div>
+        </li>
+        <li><span>Image 02</span>
+            <div></div>
+        </li>
+        <li><span>Image 03</span>
+            <div></div>
+        </li>
+        <li><span>Image 04</span>
+            <div></div>
+        </li>
+        <li><span>Image 05</span>
+            <div></div>
+        </li>
+        <li><span>Image 06</span>
+            <div></div>
+        </li>
+    </ul>
+    <!-- /.slideshow -->
+
+    <!-- .wrapper -->
+    <div class="wrapper">
+
+        <!--- .Content -->
+        <section class="tab-content">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-12">
+
+                        <div class="row">
+
+                            <div class="col-md-3 widget-profil">
+                                <div class="row">
+
+                                    <!-- Profile Image -->
+                                    <div class="col-lg-12 col-md-12 col-sm-3 col-xs-12 ">
+
+
+
+                                        <div class="image-holder one" id="pic_prof_1" style="display:block">
+
+                                            <img class="head-image up circle" src="images/img/up.png" width="150"
+                                                height="150" alt="" />
+                                            <img class="head-image up-left circle" src="images/img/upleft.png"
+                                                width="150" height="150" alt="" />
+                                            <img class="head-image left circle" src="images/img/left.png" width="150"
+                                                height="150" alt="" />
+                                            <img class="head-image down-left circle" src="images/img/downleft.png"
+                                                width="150" height="150" alt="" />
+                                            <img class="head-image down circle" src="images/img/down.png" width="150"
+                                                height="150" alt="" />
+                                            <img class="head-image down-right circle" src="images/img/downright.png"
+                                                width="150" height="150" alt="" />
+                                            <img class="head-image right circle" src="images/img/right.png" width="150"
+                                                height="150" alt="" />
+                                            <img class="head-image up-right circle" src="images/img/upright.png"
+                                                width="150" height="150" alt="" />
+                                            <img class="head-image front circle" src="images/img/front.png" width="150"
+                                                height="150" alt="" />
+
+                                        </div>
+
+                                        <!-- style for simple image profile -->
+                                        <div class="circle-img" id="pic_prof_2" style="display:none"></div>
+
+
+                                    </div>
+                                    <!-- End Profile Image -->
+
+                                    <div class="col-lg-12 col-md-12 col-sm-9 col-xs-12">
+
+
+                                        <!-- Profile info -->
+                                        <div id="profile_info">
+                                            <h1 id="name" class="transition-02">Pisces</h1>
+                                            <h4 class="line">P100 Outdoor Version</h4>
+                                            <h6><span class="fa fa-map-marker"></span> Pisces team.</h6>
+                                        </div>
+                                        <!-- End Profile info -->
+
+
+                                        <!-- Profile Description -->
+                                        <div id="profile_desc">
+                                            <p>
+                                                Precautions:
+                                                <br>
+                                                -Please place the miner near the window sill, and do not lay any iron screens, masks, etc.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-9 flexy_content" style="padding-left: 0;padding-right: 0;">
+
+                                <!-- verticalTab menu -->
+                                <div id="verticalTab">
+
+                                    <ul class="resp-tabs-list">
+                                        <li class="tabs-profile hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a profile"
+                                            data-tab-name="profile">
+                                            <span class="tite-list">Hotspot Status</span>
+                                            <i class="fa fa-user icon_menu icon_menu_active"></i>
+                                        </li>
+
+                                        <li class="tabs-resume hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a"
+                                            data-tab-name="resume">
+                                            <span class="tite-list">Hotspot parameters</span>
+                                            <i class="fa fa-tasks icon_menu"></i>
+                                        </li>
+
+                                        <li class="tabs-portfolio hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a"
+                                            data-tab-name="portfolio">
+                                            <span class="tite-list">Hotspot setting</span>
+                                            <i class="fa fa-briefcase icon_menu"></i>
+                                        </li>
+
+                                        <li class="tabs-blog hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a"
+                                            data-tab-name="blog">
+                                            <span class="tite-list">Latest new</span>
+                                            <i class="fa fa-bullhorn icon_menu"></i>
+                                        </li>
+
+                                        <li class="tabs-contact hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a"
+                                            data-tab-name="contact" style="margin-bottom: 48px !important;">
+                                            <span class="tite-list">Contact us</span>
+                                            <i class="fa fa-envelope icon_menu"></i>
+                                        </li>
+
+                                        <a href="../doc/Pisces-p100.pdf" id="print"><i class="fa fa-print icon_print"></i> </a>
+                                        <a href="../doc/Pisces-p100.pdf" id="downlowd"><i class="fa fa-download icon_print"></i> </a>
+                                    </ul>
+                                    <!-- /resp-tabs-list -->
+
+
+
+                                    <!-- resp-tabs-container -->
+                                    <div class="resp-tabs-container">
+
+                                        <!-- profile -->
+                                        <div id="profile" class="content_2">
+                                            <!-- .title -->
+                                            <h1 class="h-bloc">Hotspot Status</h1>
+
+                                            <div class="row top-p">
+                                                <div class="col-md-6 profile-l">
+
+                                                    <!--About me-->
+                                                    <div class="title_content">
+                                                        <div class="text_content">Pisces P100 OutDoorVersion</div>
+                                                        <div class="clear"></div>
+                                                    </div>
+
+                                                    <ul class="about">
+
+                                                        <!-- <li>
+                                                            <i class="glyphicon glyphicon-user"></i>
+                                                            <label>Name</label>
+                                                            <span class="value">Brown Smith</span>
+                                                            <div class="clear"></div>
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="glyphicon glyphicon-calendar"></i>
+                                                            <label>Date of birth</label>
+                                                            <span class="value">March 18, 1988</span>
+                                                            <div class="clear"></div>
+                                                        </li> -->
+
+                                                        <li>
+                                                            <i class="glyphicon glyphicon-map-marker"></i>
+                                                            <label>Ip-Adress:</label>
+                                                            <span class="value" id="ip-adress">NULL</span>
+                                                            <div class="clear"></div>
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="glyphicon glyphicon-globe"></i>
+                                                            <label>Miner:</label>
+                                                            <span class="value"><a href="#"
+                                                                    target="_blank" id='docker'>true</a></span>
+                                                            <div class="clear"></div>
+                                                        </li>
+                                                        <li>
+                                                            <i class="glyphicon glyphicon-globe"></i>
+                                                            <label>Paket:</label>
+                                                            <span class="value"><a href="#"
+                                                                    target="_blank" id='paket'>true</a></span>
+                                                            <div class="clear"></div>
+                                                        </li>
+                                                        <li>
+                                                            <i class="glyphicon glyphicon-globe"></i>
+                                                            <label>GPS:</label>
+                                                            <span class="value"><a href="#"
+                                                                    target="_blank" id='gps'>false</a></span>
+                                                            <div class="clear"></div>
+                                                        </li>
+                                                        <li>
+                                                            <i class="glyphicon glyphicon-globe"></i>
+                                                            <label>Onboarding:</label>
+                                                            <span class="value"><a href="#"
+                                                                    target="_blank" id='Onboarding'>NULL</a></span>
+                                                            <div class="clear"></div>
+                                                        </li>
+                                                        <li>
+                                                            <i class="glyphicon glyphicon-globe"></i>
+                                                            <label>BleConfig:</label>
+                                                            <span class="value"><a href="#"
+                                                                    target="_blank" id='ConfigStatus'>off</a></span>
+                                                            <div class="clear"></div>
+                                                        </li>
+                                                        <li>
+                                                            <i class="glyphicon glyphicon-globe"></i>
+                                                            <label>BleAdvertise:</label>
+                                                            <span class="value"><a href="#"
+                                                                    target="_blank" id='AdvertiseStatus'>off</a></span>
+                                                            <div class="clear"></div>
+                                                        </li>
+
+
+                                                    </ul>
+
+                                                    <!-- 🍺基础进度条miner状态 -->
+
+                                                        <div class="title_content" style="float: none;">
+                                                            <div class="text_content">Hotspot Status：</div>
+                                                            <div class="clear"></div>
+                                                        </div>
+    
+                                                        <div class="skills">
+                                                            <!-- .skillbar -->
+                                                            <div class="skillbar clearfix" data-percent="95%">
+                                                                <div class="skillbar-title"><span>cpu</span></div>
+                                                                <div class="skillbar-bar"></div>
+                                                                <div class="skill-bar-percent" id='cpu'>95%</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skills">
+                                                            <!-- .skillbar -->
+                                                            <div class="skillbar clearfix" data-percent="45%">
+                                                                <div class="skillbar-title"><span>memory</span></div>
+                                                                <div class="skillbar-bar"></div>
+                                                                <div class="skill-bar-percent" id='memory'>45%</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skills">
+                                                            <!-- .skillbar -->
+                                                            <div class="skillbar clearfix" data-percent="90%">
+                                                                <div class="skillbar-title"><span>disk</span></div>
+                                                                <div class="skillbar-bar"></div>
+                                                                <div class="skill-bar-percent" id='disk'>90%</div>
+                                                            </div>
+                                                        </div>
+
+                                                        
+
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse"
+                                                                        data-parent="#accordion" href="#MinerController"
+                                                                        class="collapse_tabs">
+                                                                        Hotspot Controller
+                                                                        <i class="glyphicon glyphicon-chevron-down"
+                                                                            style="float: right;font-size: 13px;"></i>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="MinerController" class="panel-collapse collapse">
+
+
+                                                                <input id="freshMiner" type="button" onclick="freshMiner();" value='Fresh Hotspot Information'/>
+                                                                <input type="button" onclick="action('stopMiner');" value='Stop Hotspot'/>
+                                                                <input type="button" onclick="action('restartMiner');" value='Reboot Hotspot'/>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse"
+                                                                        data-parent="#accordion" href="#PaketController"
+                                                                        class="collapse_tabs">
+                                                                        PaketController
+                                                                        <i class="glyphicon glyphicon-chevron-down"
+                                                                            style="float: right;font-size: 13px;"></i>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="PaketController" class="panel-collapse collapse">
+                                                                <input type="button" onclick="action('startPacket');" value='Start packet-forwarder'/>
+                                                                <input type="button" onclick="action('stopPacket');" value='Stop packet-forwarder'/>
+                                                                <input type="button" onclick="action('restartPacket');" value='Restart packet-forwarder'/>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse"
+                                                                        data-parent="#accordion" href="#DockerController"
+                                                                        class="collapse_tabs">
+                                                                        MinerController
+                                                                        <i class="glyphicon glyphicon-chevron-down"
+                                                                            style="float: right;font-size: 13px;"></i>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="DockerController" class="panel-collapse collapse">
+                                                                <input type="button" onclick="action('startDocker');" value='Start Miner'/>
+                                                                <input type="button" onclick="action('stopDocker');" value='Stop Miner'/>
+                                                                <input type="button" onclick="action('restartDocker');" value='Restart Miner'/>
+
+                                                            </div>
+                                                        </div>
+
+
+                                                        
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse"
+                                                                        data-parent="#accordion" href="#BleController"
+                                                                        class="collapse_tabs">
+                                                                        BluetoothController
+                                                                        <i class="glyphicon glyphicon-chevron-down"
+                                                                            style="float: right;font-size: 13px;"></i>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="BleController" class="panel-collapse collapse">
+                                                                <input type="button" onclick="action('ConfigOn');" value='Start ConfigServer'/>
+                                                                <input type="button" onclick="action('ConfigOff');" value='Stop ConfigServer'/>
+                                                                <input type="button" onclick="action('AdvertiseOn');" value='Start Ble Advertise'/>
+                                                                <input type="button" onclick="action('AdvertiseOff');" value='Stop Ble Advertise'/>
+                                                            </div>
+                                                        </div>
+
+                                                </div>
+                                                <!-- End left-wrap -->
+
+                                                <div class="col-md-6 profile-r">
+
+                                                    <div class="cycle-slideshow">
+                                                        <img src="images/img/left.jpg" alt="" />
+                                                        <img src="images/img/front.png" alt="" />
+                                                        <img src="images/img/upleft.png" alt="" />
+                                                        <!-- <img src="images/img-profile/about_3.png" alt="" /> -->
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="clear"></div>
+
+
+                                            <div class="row" id="services">
+                                                <div class="col-md-12">
+                                                    <div class="title_content">
+                                                        <div class="text_content">Docker information</div>
+                                                        <div class="clear"></div>
+                                                    </div>
+
+
+                                                    <div class="col-md-4 pack-service">
+                                                        <div class="service">
+                                                            <div class="service-icon"><i class="fa fa-tag"></i></div>
+                                                            <div class="service-detail">
+                                                                <h6>Info Height</h6>
+                                                                <p id='infoHeight'>info height</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 pack-service">
+                                                        <div class="service">
+                                                            <div class="service-icon"><i class="fa fa-cogs"></i></div>
+                                                            <div class="service-detail">
+                                                                <h6>Docker Port</h6>
+                                                                <p id='dockerBasicPort'>dockerBasicPort</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 pack-service">
+                                                        <div class="service">
+                                                            <div class="service-icon"><i class="fa fa-arrows-alt"></i>
+                                                            </div>
+                                                            <div class="service-detail">
+                                                                <h6>Docker Basic Status</h6>
+                                                                <p id='dockerBasicStats'>docker status</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!-- End Services -->
+
+
+                                            <div class="clear"></div>
+                                            <div class="border-list"></div>
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="bottom-p">
+                                                        <div class="title_content">
+                                                            <div class="text_content">模块状态</div>
+                                                            <div class="clear"></div>
+                                                        </div>
+
+                                                        <div class="panel-group" id="accordion">
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="panel-title">
+                                                                        <a data-toggle="collapse"
+                                                                            data-parent="#accordion" href="#collapseOne"
+                                                                            class="collapse_tabs">
+                                                                            Docker
+                                                                            <i class="glyphicon glyphicon-chevron-up"
+                                                                                style="float: right;font-size: 13px;"></i>
+                                                                        </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div id="collapseOne"
+                                                                    class="panel-collapse collapse in">
+                                                                    <div class="panel-body" id='dockerStats'>
+                                                                        Module status
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="panel-title">
+                                                                        <a data-toggle="collapse"
+                                                                            data-parent="#accordion"
+                                                                            href="#collapseThree" class="collapse_tabs">
+                                                                            Info Height
+                                                                            <i class="glyphicon glyphicon-chevron-down"
+                                                                                style="float: right;font-size: 13px;"></i>
+                                                                        </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div id="collapseThree" class="panel-collapse collapse">
+                                                                    <div class="panel-body" id='height'>
+                                                                      
+                                                                        info height
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="panel-title">
+                                                                        <a data-toggle="collapse"
+                                                                            data-parent="#accordion" href="#testecc"
+                                                                            class="collapse_tabs">
+                                                                           Onboarding Key
+                                                                            <i class="glyphicon glyphicon-chevron-down"
+                                                                                style="float: right;font-size: 13px;"></i>
+                                                                        </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div id="testecc" class="panel-collapse collapse">
+                                                                    <div class="panel-body" id='testECC608A'>
+                                                                       
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="panel-title">
+                                                                        <a data-toggle="collapse"
+                                                                            data-parent="#accordion" href="#keyatecc"
+                                                                            class="collapse_tabs">
+                                                                           PublicKey Key
+                                                                            <i class="glyphicon glyphicon-chevron-down"
+                                                                                style="float: right;font-size: 13px;"></i>
+                                                                        </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div id="keyatecc" class="panel-collapse collapse">
+                                                                    <div class="panel-body" id='keyECC608A'>
+                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="panel-title">
+                                                                        <a data-toggle="collapse"
+                                                                            data-parent="#accordion" href="#gpsmodule"
+                                                                            class="collapse_tabs">
+                                                                            GPS Module Log
+                                                                            <i class="glyphicon glyphicon-chevron-down"
+                                                                                style="float: right;font-size: 13px;"></i>
+                                                                        </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div id="gpsmodule" class="panel-collapse collapse">
+                                                                    <div class="panel-body" id='packetforwardlog'>
+                                                                        <input type="button" onclick="action('enableGpsPower');" value='Enable Gps Module Power'/>
+                                                                        <input type="button" onclick="gpsFresh();" value='Show GPS Module Log'/>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="panel-title">
+                                                                        <a data-toggle="collapse"
+                                                                            data-parent="#accordion" href="#collapseFour"
+                                                                            class="collapse_tabs">
+                                                                            peerBook
+                                                                            <i class="glyphicon glyphicon-chevron-down"
+                                                                                style="float: right;font-size: 13px;"></i>
+                                                                        </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div id="collapseFour" class="panel-collapse collapse">
+                                                                    <div class="panel-body" id='peerBooks'>
+                                                                        <input type="button" onclick="freshLog();" value='Show Logs'/>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="panel-title">
+                                                                        <a data-toggle="collapse"
+                                                                            data-parent="#accordion" href="#dockerlog"
+                                                                            class="collapse_tabs">
+                                                                            Docker Log
+                                                                            <i class="glyphicon glyphicon-chevron-down"
+                                                                                style="float: right;font-size: 13px;"></i>
+                                                                        </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div id="dockerlog" class="panel-collapse collapse">
+                                                                    <div class="panel-body" id='dockerLog'>
+                                                                        <input type="button" onclick="freshLog();" value='Show Logs'/>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <!-- End .profile -->
+
+                                        <!-- .resume -->
+                                        <div id="resume" class="content_2">
+                                            <!-- .title -->
+                                            <h1 class="h-bloc">Miner Information</h1>
+
+                                            <div class="title_content">
+                                                <div class="text_content">Sorry, this page is still under construction🚧
+                                                </div>
+                                                <div class="clear"></div>
+                                            </div>
+
+
+                                            <p class="caps">This miner panel is the prototype of Pisces-Miner miner panel。<br>
+                                                And, it is only used for testing prototypes.<br>
+                                                The final product equipment will be connected to the Pisces-Miner control platform.<br>
+                                                We will provide users with supporting control App, intranet Web-panel, and platform.<br>
+                                               Help users manage their miner faster and more timely.<br>
+                                            </p>
+                                        </div>
+                                        <!-- End .resume -->
+
+                                        <!-- .portfolio -->
+                                        <div id="portfolio" class="content_2">
+                                            <h1 class="h-bloc">矿机设置</h1>
+                                            <div class="title_content">
+                                                <div class="text_content">Sorry, this page is still under construction🚧
+                                                </div>
+                                                <div class="clear"></div>
+                                            </div>
+
+
+                                            <p class="caps">This miner panel is the prototype of Pisces-Miner miner panel。<br>
+                                                And, it is only used for testing prototypes.<br>
+                                                The final product equipment will be connected to the Pisces-Miner control platform.<br>
+                                                We will provide users with supporting control App, intranet Web-panel, and platform.<br>
+                                                Help users manage their miner faster and more timely.<br>
+                                            </p>
+                                            </div>
+
+                                        <div id="blog" class="content_2">
+                                            <h1 class="h-bloc">Latest News</h1><br>
+                                            <div class="title_content">
+                                                <div class="text_content">Sorry, this page is still under construction🚧
+                                                </div>
+                                                <div class="clear"></div>
+                                            </div>
+
+
+                                            <p class="caps">This miner panel is the prototype of Pisces-Miner miner panel。<br>
+                                                And, it is only used for testing prototypes.<br>
+                                                The final product equipment will be connected to the Pisces-Miner control platform.<br>
+                                                We will provide users with supporting control App, intranet Web-panel, and platform.<br>
+                                               Help users manage their miner faster and more timely.<br>
+                                            </p>
+                                        </div>
+                                          
+
+                                        <div id="contact" class="content_2">
+                                            <h1 class="h-bloc">Contact Us</h1>
+                                        
+
+                                        
+
+                                            <div class="row">
+
+                                                <div class="col-lg-12">
+                                                    <div id="map"></div>
+                                                </div>
+
+                                                <div class="col-lg-12">
+                                                    <div class="row" id="contact-user">
+                                                        <div class="col-md-5">
+                                                            <div class="contact-info">
+
+                                                                <div class="title_content" style="float: none;">
+                                                                    <div class="text_content">Contact info</div>
+                                                                    <div class="clear"></div>
+                                                                </div>
+
+                                                                <ul>
+                                                                    <li><span class="span-info"><i
+                                                                                class="glyphicon glyphicon-envelope"></i>
+                                                                            Email:</span> carzyg@outlook.com</li>
+                                                                    <li><span class="span-info"><i
+                                                                                class="glyphicon glyphicon-globe"></i>
+                                                                            Website:</span> www.piscesminer.com</li>
+
+                                                                </ul>
+                                                            </div>
+                                                            <!-- /Contact Info -->
+                                                            <div class="clear"></div>
+
+
+
+
+
+                                                        </div>
+
+                                                        <div class="col-md-7">
+                                                            <!-- Contact Form -->
+                                                          
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                        <!-- End .contact -->
+
+                                    </div>
+                                    <!-- End #resp-tabs-container -->
+
+                                </div><!-- End verticalTab -->
+
+                            </div><!-- End flexy_content -->
+
+
+                        </div><!-- End row -->
+
+                    </div><!-- End col-md-12 -->
+
+                </div><!-- End row -->
+
+            </div><!-- End container -->
+
+        </section>
+        <!-- End Content -->
+
+    </div>
+    <!-- End wrapper -->
+
+    <!-- Switcher -->
+    <div id="custumize-style">
+        <h2>Style Selector<a href="#" class="switcher"><i class="fa fa-cogs icon-switcher"></i></a></h2>
+        <div>
+            <h3>Theme Color</h3>
+            <ul class="colors-style" id="color1">
+
+                <li><a href="#" class="gray"></a></li>
+                <li><a href="#" class="green"></a></li>
+                <li><a href="#" class="blue"></a></li>
+                <li><a href="#" class="red"></a></li>
+                <li><a href="#" class="yellow"></a></li>
+
+                <li><a href="#" class="DarkBlue"></a></li>
+                <li><a href="#" class="orange"></a></li>
+                <li><a href="#" class="rose"></a></li>
+                <li><a href="#" class="lightseagreen"></a></li>
+                <li><a href="#" class="darkolivegreen"></a></li>
+
+            </ul>
+        </div>
+        <div>
+
+            <h3 class="layouts">Profile Image</h3>
+            <div id="show">
+
+                <div class="clean-check">
+
+                    <input type="radio" id="r1" name="style_profile" value="style_profile_1" checked="checked" />
+                    <label for="r1"><span></span>Rotating image</label>
+
+                    <input type="radio" id="r2" name="style_profile" value="style_profile_2" />
+                    <label for="r2"><span></span>Fixed image</label>
+
+                </div>
+            </div>
+
+
+
+            <h3 class="layouts">Page Builder</h3>
+            <div id="show">
+                <div class="clean-check" style="padding-left: 30px;">
+
+                    <input type="radio" id="pb1" name="page_builder" value="http://demo.flexy-codes.com/FlexyVcard"
+                        checked />
+                    <label for="pb1"><span></span>Style 1</label>
+
+                    <input type="radio" id="pb2" name="page_builder" value="page-builder-2.html" />
+                    <label for="pb2"><span></span>Style 2</label>
+
+                    <input type="radio" id="pb3" name="page_builder" value="page-builder-3.html" />
+                    <label for="pb3"><span></span>Style 3</label>
+
+                    <input type="radio" id="pb4" name="page_builder" value="page-builder-4.html" />
+                    <label for="pb4"><span></span>Style 4</label>
+                </div>
+            </div>
+
+            <h3 class="layouts">Page Animation</h3>
+            <div id="show">
+
+                <select name="one" class="dropdown-select">
+                    <optgroup label="Bouncing Entrances">
+                        <option value="bounceIn" selected>bounceIn</option>
+                        <option value="bounceInDown">bounceInDown</option>
+                        <option value="bounceInLeft">bounceInLeft</option>
+                        <option value="bounceInRight">bounceInRight</option>
+                        <option value="bounceInUp">bounceInUp</option>
+                    </optgroup>
+
+                    <optgroup label="Fading Entrances">
+                        <option value="fadeIn">fadeIn</option>
+                        <option value="fadeInDown">fadeInDown</option>
+                        <option value="fadeInLeft">fadeInLeft</option>
+                        <option value="fadeInRight">fadeInRight</option>
+                        <option value="fadeInUp">fadeInUp</option>
+                    </optgroup>
+                </select>
+
+            </div>
+
+            <h3 class="layouts" style="padding-top:5px">Background Style</h3>
+            <div id="show">
+
+                <div class="clean-check">
+
+                    <input type="radio" id="s1" name="layout" value="bg_color" checked="checked" />
+                    <label for="s1"><span></span>Color</label>
+
+                    <input type="radio" id="s2" name="layout" value="bg_slider" />
+                    <label for="s2"><span></span>Slider</label>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div>
+            <h3>Background Color</h3>
+            <ul class="colors-style bgsolid" id="bgsolid">
+                <li><a href="#" class="gray-bg"></a></li>
+                <li><a href="#" class="green-bg"></a></li>
+                <li><a href="#" class="blue-bg"></a></li>
+                <li><a href="#" class="red-bg"></a></li>
+                <li><a href="#" class="yellow-bg"></a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Background Image</h3>
+            <ul class="colors-style bg" id="bg">
+                <li><a href="#" class="bg1"></a></li>
+                <li><a href="#" class="bg2"></a></li>
+                <li><a href="#" class="bg3"></a></li>
+                <li><a href="#" class="bg4"></a></li>
+                <li><a href="#" class="bg5"></a></li>
+            </ul>
+        </div>
+
+        <div id="button-reset"><a href="#" class="button color blue boxed">Reset</a></div>
+    </div>
+    <!-- End Switcher -->
+
+
+
+    <!-- jquery | jQuery 1.11.0 -->
+    <!-- Credits: http://jquery.com -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <!-- Js | bootstrap -->
+    <!-- Credits: http://getbootstrap.com/ -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Js | jquery.cycle -->
+    <!-- Credits: https://github.com/malsup/cycle2 -->
+    <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+
+    <!-- jquery | rotate and portfolio -->
+    <!-- Credits: http://jquery.com -->
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="js/HeadImage.js"></script>
+
+    <!-- Js | easyResponsiveTabs -->
+    <!-- Credits: http://webtrendset.com/demo/easy-responsive-tabs/Index.html -->
+    <script type="text/javascript" src="js/easyResponsiveTabs.min.js"></script>
+
+    <!-- Js | jquery.cookie -->
+    <!-- Credits: https://github.com/carhartl/jquery-cookie -->
+    <script type="text/javascript" src="js/jsSwitcher/jquery.cookie.js"></script>
+
+    <!-- Js | switcher -->
+    <!-- Credits: http://themeforest.net/user/FlexyCodes -->
+    <script type="text/javascript" src="js/jsSwitcher/switcher.js"></script>
+
+    <!-- Js | mCustomScrollbar -->
+    <!-- Credits: http://manos.malihu.gr/jquery-custom-content-scroller -->
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- jquery | prettyPhoto -->
+    <!-- Credits: http://www.no-margin-for-errors.com/ -->
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+
+    <!-- Js | gmaps -->
+    <!-- Credits: http://maps.google.com/maps/api/js?sensor=true-->
+
+    <script type="text/javascript" src="js/gmaps.min.js"></script>
+
+    <!-- Js | Js -->
+    <!-- Credits: http://themeforest.net/user/FlexyCodes -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- <script type="text/javascript" src="action.js"></script> -->
+    <!-- code js for image rotate -->
+    <script type="text/javascript">
+        var mouseX;
+        var mouseY;
+        var imageOne;
+
+        /* Calling the initialization function */
+        $(init);
+
+        /* The images need to re-initialize on load and on resize, or else the areas
+         * where each image is displayed will be wrong. */
+        $(window).load(init);
+        $(window).resize(init);
+
+        /* Setting the mousemove event caller */
+        $(window).mousemove(getMousePosition);
+
+        /* This function is called on document ready, on load and on resize
+         * and initiallizes all the images */
+        function init() {
+
+            /* Instanciate the mouse position variables */
+            mouseX = 0;
+            mouseY = 0;
+
+            /* Instanciate a HeadImage class for every image */
+            imageOne = new HeadImage("one");
+
+        }
+
+        /* This function is called on mouse move and gets the mouse position. 
+         * It also calls the HeadImage function to display the correct image*/
+        function getMousePosition(event) {
+
+            /* Setting the mouse position variables */
+            mouseX = event.pageX;
+            mouseY = event.pageY;
+
+            /*Calling the setImageDirection function of the HeadImage class
+             * to display the correct image*/
+          //  imageOne.setImageDirection();
+
+        }
+function request(action,tag){
+  $.ajax({
+    type : "GET",
+    cache : false,
+    async : false,
+    url : "../action.php?action="+action,
+    success : function(data) {
+        DomAction(tag,data);
+      return data;
+    },
+    error : function() {
+      console.log ('🍺failed');
+    }
+})}
+
+function post(action){
+  $.ajax({
+    type : "get",
+    async : false,
+    url : "../action.php?action="+action,
+    success : function(data) {
+        console.log ('🚄'+data+":  exec success");
+    },
+    error : function() {
+      console.log ('🚄'+action+":  exec failed");
+    }
+})}
+/**
+ * 🍺操作逻辑
+ **/
+function init(){
+setTimeout(() => {
+    request('getIp','ip-adress');
+},0);
+setTimeout(() => {
+    request('AdvertiseStatus','AdvertiseStatus');
+},0);
+setTimeout(() => {
+    request('ConfigStatus','ConfigStatus');
+},0);
+setTimeout(() => {
+    request('Onboarding','Onboarding');
+},0);
+setTimeout(() => {
+    request('getGpsStatus','gps');
+},0);
+setTimeout(() => {
+    request('dockerStatus','docker');
+},0);
+setTimeout(() => {
+    request('paketStatus','paket')
+},0);
+setTimeout(() => {
+    request('cpu','cpu');
+},0);
+setTimeout(() => {
+    request('mom','memory');
+},0);
+setTimeout(() => {
+    request('disk','disk');
+},0);
+setTimeout(() => {
+    request('infoHeight','infoHeight');
+},0);
+
+setTimeout(() => {
+    request('infoHeight','height');
+},0);
+setTimeout(() => {
+    request('dockerStats','dockerStats');
+},0);
+// setTimeout(() => {
+//     request('getECC608','Atecc608');
+// },0);
+setTimeout(() => {
+    request('dockerBasicPort','dockerBasicPort');
+},0);
+setTimeout(() => {
+    request('dockerStatus','dockerBasicStats');
+},0);
+setTimeout(() => {
+    request('testECC608A','testECC608A');
+},0);
+setTimeout(() => {
+    request('keyECC608A','keyECC608A');
+},0);
+
+}
+function fresh(){
+    setTimeout(() => {
+    request('getGpsStatus','gps');
+},0);
+setTimeout(() => {
+    request('getIp','ip-adress');
+},0);
+setTimeout(() => {
+    request('dockerStatus','docker');
+},0);
+setTimeout(() => {
+    request('paketStatus','paket')
+},0);
+setTimeout(() => {
+    request('cpu','cpu');
+},0);
+setTimeout(() => {
+    request('mom','memory');
+},0);
+setTimeout(() => {
+    request('disk','disk');
+},0);
+setTimeout(() => {
+    request('infoHeight','infoHeight');
+},0);
+
+setTimeout(() => {
+    request('infoHeight','height');
+},0);
+setTimeout(() => {
+    request('dockerStats','dockerStats');
+},0);
+setTimeout(() => {
+    request('dockerBasicPort','dockerBasicPort');
+},0);
+
+setTimeout(() => {
+    request('dockerStatus','dockerBasicStats');
+},0);
+setTimeout(() => {
+    request('testECC608A','testECC608A');
+},0);
+setTimeout(() => {
+    request('keyECC608A','keyECC608A');
+},0);
+
+    alert('successfuly flash');
+}
+
+
+function freshLog(){
+//     setTimeout(() => {
+//         request('packetforwardruninglog','packetforwardruninglog');
+// },0);
+// setTimeout(() => {
+//     request('getpaketinfo','packetforwardlog');
+// },0);
+setTimeout(() => {
+    request('peerBooks','peerBooks');
+},0);
+// setTimeout(() => {
+//     request('getECC608','Atecc608');
+// },0); 
+setTimeout(() => {
+    request('dockerLog','dockerLog');
+},0);
+  
+  
+}
+
+function gpsFresh(){
+    setTimeout(() => {
+    $.ajax({
+    type : "GET",
+    cache : false,
+    async : false,
+    url : "../action.php?action="+'getGps',
+    success : function(data) {
+        if(data.length<10){
+            alert('please enable the GPS power first!')
+        }else{
+            DomAction('gpsmodule',data);
+        }
+       
+      return data;
+    },
+    error : function() {
+      console.log ('🍺failed');
+    }
+})
+},0);
+}
+
+function gpsEnable(){
+action(enableGpsPower);
+}
+
+function listenAction(){
+
+}
+function DomAction(id,value){
+var me = document.getElementById(id);
+me.innerHTML=value;
+}
+//DomAction('ip-adress','nmsl');
+init();
+
+/**
+ * 🔥监听按钮
+ * */
+function freshMiner(){
+   fresh();
+}
+function action(action){
+console.log('🍺:'+action);
+post(action);
+alert('🚆'+action+': exec success');
+}
+    </script>
+</body>
+
+</html>
